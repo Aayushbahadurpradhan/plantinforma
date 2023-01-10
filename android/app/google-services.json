@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "776790910496",
+    "project_id": "plantinforma",
+    "storage_bucket": "plantinforma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776790910496:android:6f282951cca2ba5fdbbe45",
+        "android_client_info": {
+          "package_name": "com.plantinforma.plantinforma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776790910496-hn9dsg1c7mbq2dbg826if1k5aq4s5btq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK-BrzJXTKVGpJ-oqfSw_Y1D9XHDFJeMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776790910496-hn9dsg1c7mbq2dbg826if1k5aq4s5btq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
