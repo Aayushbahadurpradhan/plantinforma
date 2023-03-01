@@ -19,7 +19,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
   TextEditingController _nameController = TextEditingController();
   TextEditingController _phoneNumberController = TextEditingController();
   TextEditingController _usernameController = TextEditingController();
-  TextEditingController _gender = TextEditingController();
 
   bool _obscureTextPassword = true;
   bool _obscureTextPasswordConfirm = true;
@@ -64,9 +63,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
             child: Column(
               children: [
                 Image.asset(
-                  "assets/images/logo.png",
-                  height: 100,
-                  width: 100,
+                  "assets/icon/signup.png",
+                  height: 400,
+                  width: 300,
                 ),
                 SizedBox(height: 10,),
                 TextFormField(
@@ -215,7 +214,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
                 ),
-
                 SizedBox(height: 10,),
                 TextFormField(
                   controller: _confirmPasswordController,
@@ -259,14 +257,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 Container(
                   width: double.infinity,
                   child: ElevatedButton(
-                      style: ButtonStyle(
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                            RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.blue)
-                            )
-                        ),
-                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
+                      style: OutlinedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 89, 126, 50),
+                        padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                       ),
                       onPressed: (){
                           register();

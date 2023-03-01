@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   late AuthViewModel _authViewModel;
 
   void checkLogin() async{
-    await Future.delayed(Duration(seconds: 10));
+    await Future.delayed(Duration(seconds: 5));
     if(_authViewModel.user==null){
       Navigator.of(context).pushReplacementNamed("/login");
     }else{
@@ -36,8 +36,8 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Image.asset("assets/images/plannt.gif"),
               SizedBox(height: 100,),
-              Text("Bazz", style: TextStyle(
-                fontSize: 22
+              Text("Plant Application", style: TextStyle(
+                fontSize: 44
               ),)
             ],
           ),
