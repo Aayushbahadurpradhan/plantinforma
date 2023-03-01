@@ -160,7 +160,7 @@ class _SingleCategoryBodyState extends State<SingleCategoryBody> {
                             maxLines: 2,
                           ),
                           Text(
-                            "Rs. "+e.temperatura.toString(),
+                            e.temperatura.toString()+" Celcius",
                             style: TextStyle(fontSize: 15, color: Colors.green),
                             textAlign: TextAlign.center,
                             maxLines: 2,
