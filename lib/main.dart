@@ -7,7 +7,6 @@ import 'package:plantinforma/screens/auth/register_screen.dart';
 import 'package:plantinforma/screens/auth/splash_screen.dart';
 import 'package:plantinforma/screens/category/single_category_screen.dart';
 import 'package:plantinforma/screens/dashboard/dashboard.dart';
-import 'package:plantinforma/screens/home/dashboard.dart';
 import 'package:plantinforma/screens/product/add_product_screen.dart';
 import 'package:plantinforma/screens/product/edit_product_screen.dart';
 import 'package:plantinforma/screens/product/my_product_screen.dart';
@@ -30,11 +29,11 @@ void main() async {
       projectId: "plantinforma",
     ),
   );
-  runApp(MyApp());
+  runApp(PlantInfo());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class PlantInfo extends StatelessWidget {
+  const PlantInfo({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -62,7 +61,7 @@ class MyApp extends StatelessWidget {
                 theme: ThemeData(
                   primarySwatch: Colors.blue,
                 ),
-                initialRoute: "/login",
+                initialRoute: "/splash",
                 routes: {
                   "/login": (BuildContext context)=>LoginScreen(),
                   "/splash": (BuildContext context)=>SplashScreen(),

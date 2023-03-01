@@ -157,15 +157,15 @@ class _HomeScreenState extends State<HomeScreen> {
         Container(
             margin: EdgeInsets.symmetric(horizontal: 10),
             child: Text(
-              "Welcome, Icee",
+              "Welcome, ",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             )),
-        // Container(
-        //     margin: EdgeInsets.symmetric(horizontal: 10),
-        //     child: Text(
-        //       authVM.loggedInUser != "Icee" ? authVM.loggedInUser!.name.toString() : "Icee",
-        //       style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-        //     )),
+        Container(
+            margin: EdgeInsets.symmetric(horizontal: 10),
+            child: Text(
+              authVM.loggedInUser != null ? authVM.loggedInUser!.name.toString() : "Icee",
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            )),
       ],
     );
   }

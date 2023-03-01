@@ -40,6 +40,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       await _auth.register(
           UserModel(
               email: _emailController.text,
+              name: _nameController.text,
               password: _passwordController.text,
             phone: _phoneNumberController.text,
             username: _usernameController.text
